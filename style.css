@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+:root{
+    --Light-Cyan: hsl(193, 38%, 86%);
+    --Neon-Green: hsl(150, 100%, 66%);
+    --Grayish-Blue: hsl(217, 19%, 38%);
+    --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+    --Dark-Blue: hsl(218, 23%, 16%);
+}
+body{
+    background-color: var(--Dark-Blue);
+    color: var(--Light-Cyan);
+    font-family: "Manrope", sans-serif;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.card{
+    width: 300px;
+    background-color: var(--Dark-Grayish-Blue);
+    padding: 30px;
+    position: relative;
+    border-radius: 10px;
+}
+#ad-id{
+    text-align: center;
+    color: var(--Neon-Green);
+    letter-spacing: 3px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+#pattern{
+    width: 100%;
+    margin-bottom: 20px;
+    height: 10px;
+}
+#dice{
+    position: absolute;
+    bottom: -20px;
+    left: 155px;
+    background-color: var(--Neon-Green);
+    padding: 10px;
+    border-radius: 50%;
+    color: var(--Dark-Blue);
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+}
+#dice:hover{
+    box-shadow: 0 0 20px 10px var(--Neon-Green); 
+}
+#ad-body{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+@media (max-width:330px) {
+    #dice{
+        left: 130px;
+    }
+}
